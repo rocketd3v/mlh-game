@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Dodge</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hud">
+        <div>
+          <p class="label">Score</p>
+          <h1 id="score">0</h1>
+        </div>
+        <div>
+          <p class="label">Status</p>
+          <h2 id="status">Ready</h2>
+        </div>
+      </header>
+
+      <canvas id="gameCanvas" width="640" height="480" aria-label="Star dodge game area"></canvas>
+
+      <div class="controls">
+        <button id="startBtn" type="button">Start Game</button>
+      </div>
+
+      <p class="instructions">
+        Move with <strong>WASD</strong> or <strong>Arrow Keys</strong>.<br />
+        Dodge the meteors and collect the stars.
+      </p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
